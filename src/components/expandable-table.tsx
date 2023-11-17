@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, HTMLProps } from "react";
+import React, { HTMLProps } from "react";
 
 import {
   Column,
@@ -17,7 +17,6 @@ import { makeData, Person } from "./makeData";
 export default function ExpandableTable() {
   const rerender = React.useReducer(() => ({}), {})[1];
 
-  // todo update columns
   const columns = React.useMemo<ColumnDef<Person>[]>(
     () => [
       {
