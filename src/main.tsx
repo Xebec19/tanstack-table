@@ -6,6 +6,7 @@ import Root from "./routes/root.tsx";
 import ErrorPage from "./error-page.tsx";
 import ExpandableTableRoute from "./routes/tables/expandable-table.tsx";
 import GroupTable from "./routes/tables/group-table.tsx";
+import ColumnSizingTable from "./routes/tables/column-sizing-table.tsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "table/group",
         element: <GroupTable />,
+      },
+      {
+        path: "table/column-resize",
+        element: <ColumnSizingTable />,
       },
     ],
   },

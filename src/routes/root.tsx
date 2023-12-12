@@ -11,6 +11,10 @@ export default function Root() {
         <Link className="link" to={"/table/group"}>
           Group Table
         </Link>
+
+        <Link className="link" to={"/table/column-resize"}>
+          Column Resize
+        </Link>
       </div>
       <div>
         <Outlet />
